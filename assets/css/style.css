@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 0.625rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+/* common */
+:root {
+  --main-color: #2ac9bf;
+  --color-sub_heading: #767e7e;
+  --color-content: #9da6a5;
+}
+
+.main-content {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 186px;
+  height: 68px;
+  background-color: var(--main-color);
+}
+
+/* NAV */
+main {
+    height: 10000px;
+}
+nav {
+    padding: 52px 0 8px 0;
+    position: sticky;
+    top: -40px;
+}
+
+nav .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .navigation .function-nav,
+.set-account {
+  display: flex;
+}
+
+.navigation .function-nav a {
+  padding: 8px 20px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #2f3a3b;
+}
+
+.navigation .function-nav a:hover {
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+}
+
+.navigation .set-account {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.navigation .set-account li:last-child {
+  margin-left: 24px;
+}
+.navigation .set-account {
+  display: flex;
+  align-items: center;
+}
+
+.navigation .set-account .btn {
+  width: 108px;
+  height: 48px;
+  border: 1px solid #1ebfc1;
+  border-radius: 6px;
+  background-color: #fff;
+  color: var(--main-color);
+}
