@@ -58,6 +58,11 @@ li {
   border-radius: 14px;
 }
 
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 .heading-content {
   font-weight: 700;
   font-size: 4.2rem;
@@ -82,9 +87,7 @@ li {
 }
 
 /* NAV */
-main {
-  height: 10000px;
-}
+
 nav {
   padding: 52px 0 8px 0;
   background-color: #fff;
@@ -136,8 +139,12 @@ nav .navigation .function-nav,
   height: 48px;
   border: 1px solid #1ebfc1;
   border-radius: 6px;
-  background-color: #fff;
-  color: var(--main-color);
+  
+}
+
+.navigation .set-account .btn:hover {
+  color: #fff;
+  background-color: var(--main-color);
 }
 /* HEADER-PART-1 */
 header {
@@ -474,13 +481,200 @@ header .overview {
 .data-content .value li:first-child {
   font-weight: 700;
   font-size: 6.2rem;
-  line-height: 1.5; 
+  line-height: 1.5;
   color: #0d1111;
 }
-.data-content .value li:last-child{
+.data-content .value li:last-child {
   font-weight: 400;
-font-size: 1.8rem;
-line-height: 1.5;
-color: #767E7E;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #767e7e;
+}
 
+/* TESTIMONIAL */
+.testimonial {
+  margin-top: 265px;
+}
+
+.testimonial .content-testi {
+  display: flex;
+  align-items: center;
+  gap: 72px;
+}
+/* EVALUATE */
+.testimonial .content-testi .evaluate {
+  width: 420px;
+  padding-top: 37px;
+}
+
+.content-testi .evaluate .desc-testi {
+  padding-top: 27px;
+  width: 420px;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 1.5;
+  color: #5d6564;
+}
+
+figure figcaption {
+  padding-top: 33px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #767e7e;
+}
+
+figure figcaption span::before {
+  content: "";
+  display: inline-block;
+  margin-right: 5px;
+  width: 8px;
+  height: 2px;
+  background: #070707;
+  transform: translateY(-5px);
+}
+
+.content-testi .evaluate .cta-direct {
+  padding-top: 53px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.content-testi .evaluate .cta-direct div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.content-testi .evaluate .cta-direct div:hover {
+  color: #fff;
+  background-color: var(--main-color);
+}
+
+/* SOCIAL-USERS */
+.testimonial .content-testi .social-users {
+  width: 680px;
+  height: 480px;
+  position: relative;
+}
+.content-testi .social-users .user-face {
+  position: absolute;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content-testi .social-users .face-largest {
+  width: 235px;
+  height: 235px;
+  top: 107px;
+  right: 171px;
+}
+
+.content-testi .social-users .face-huge {
+  width: 110px;
+  height: 110px;
+  right: 0;
+  top: 19px;
+}
+
+.content-testi .social-users .face-medium {
+  width: 92px;
+  height: 92px;
+  top: 0;
+  left: 144px;
+}
+
+.content-testi .social-users .face-small {
+  width: 78px;
+  height: 78px;
+}
+
+.content-testi .social-users .fs-1 {
+  left: 0;
+  bottom: 145px;
+}
+
+.content-testi .social-users .fs-2 {
+  bottom: 0;
+  left: 212px;
+}
+
+.content-testi .social-users .fs-3 {
+  bottom: 29px;
+  right: 32px;
+}
+
+/* CTA MAKE ACCOUNT */
+.cta-makeAccount {
+  margin-top: 130px;
+  padding: 76px 88px;
+  background: #def6f5;
+}
+
+.cta-makeAccount .content-makeAcc {
+  display: flex;
+  align-items: center;
+  gap: 410px;
+}
+
+/* FOOTER */
+footer {
+  padding-top: 131px;
+}
+footer .content-footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.content-footer > li h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #2e2e2e;
+}
+
+.content-footer > li .list-item {
+  padding-top: 5px;
+}
+
+.content-footer > li .list-item li {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.content-footer > li .list-item li div {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.content-footer > li .list-item span {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #535353;
+}
+
+footer .contact {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #b0b5b4;
+  text-align: center;
 }
