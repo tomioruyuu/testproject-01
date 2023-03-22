@@ -139,7 +139,8 @@ nav .navigation .function-nav,
   height: 48px;
   border: 1px solid #1ebfc1;
   border-radius: 6px;
-  
+  background: #fff;
+  color: #1ebfc1;
 }
 
 .navigation .set-account .btn:hover {
